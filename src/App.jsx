@@ -1,19 +1,14 @@
-import { useState } from 'react';
-import reactLogo from './assets/react.svg';
-import viteLogo from '/vite.svg';
-import './App.css';
-import Counter from './components/Counter';
-import { Provider } from 'react-redux';
-import appStore from './features/appStore';
+import "./App.css";
+import Counter from "./components/Counter";
+import { Provider } from "react-redux";
+import appStore from "./features/appStore";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
-   <Provider store={appStore} >
-     <h1>hello</h1>
-    < Counter />
-   </Provider>
+    <Provider store={appStore}>
+      <h1>Hello</h1>
+      <Counter />
+    </Provider>
   );
 }
 
